@@ -1,5 +1,3 @@
 # UltraGS
-
-We are still running experiments on multiple anatomical regions, and because these datasets involve sensitive clinical information, we're not yet able to release the code and data publicly. Once the full pipeline is finalized and all privacy and compliance steps are completed, we plan to release both the data and the code together.
-
+Hi all, apologies for the previous lack of GitHub updates due to personal matters. We are delighted to share that our paper has been accepted by ICME 2026, and we will update it as soon as possible.
 Update soon..
