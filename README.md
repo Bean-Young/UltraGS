@@ -72,24 +72,18 @@ python train.py -s /path/to/processed/ultrasound/case -m /path/to/output
 ```
 
 
-## ***Validation***
+## ***Validation & Visualization***
 
 After completing the training, you can use [`render.py`](render.py) and [`metrics.py`](metrics.py) to evaluate the model.
-
-UltraGS is evaluated with PSNR, SSIM, MSE, and inference speed. In our experiments, UltraGS achieves up to 29.55 PSNR, 0.89 SSIM, and 64.69 fps on a single GPU.
 
 ```bash
 python render.py -s /path/to/processed/ultrasound/case -m /path/to/output --skip_train
 python metrics.py -m /path/to/output
 ```
 
-
-## ***Visualization***
-
-To better demonstrate the reconstruction results, we provide rendering tools for novel ultrasound view synthesis and trajectory visualization.
+To visualize the learned reconstruction along a camera trajectory, run:
 
 ```bash
-python render.py -s /path/to/processed/ultrasound/case -m /path/to/output
 python render.py -s /path/to/processed/ultrasound/case -m /path/to/output --render_path
 ```
 
