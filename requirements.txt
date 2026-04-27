@@ -1,0 +1,22 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+
+# Core runtime used for the paper code.
+torch==2.0.0+cu117
+torchvision==0.15.0+cu117
+torchaudio==2.0.0+cu117
+
+# Python dependencies.
+numpy<2
+Pillow==10.2.0
+tqdm==4.66.2
+plyfile
+mediapy==1.1.2
+lpips==0.1.4
+scikit-image==0.21.0
+opencv-python<4.13
+tensorboard
+scipy
+
+# Local CUDA extensions.
+-e submodules/simple-knn
+-e submodules/ultrasound-rasterization

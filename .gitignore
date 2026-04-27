@@ -1,0 +1,15 @@
+*.pyc
+*.so
+.vscode
+output
+build
+data
+*.ply
+**/PKG-INFO
+# submodules
+**__pycache__**
+*.png
+*.out
+eval
+*.npz
+**/tmp

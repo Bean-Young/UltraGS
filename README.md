@@ -11,7 +11,7 @@ Ultrasound imaging is a cornerstone of non-invasive clinical diagnostics, yet it
 
 To validate the effectiveness of our model, we conducted extensive experiments on three ultrasound datasets from different sources.
 
-The details of the datasets used and their specific links will be provided here for easy access to the data.
+The details of the datasets used and their specific links are provided here for easy access to the data.
 
 ### **Ultrasound in the Wild Dataset (Wild Dataset)**
 
@@ -34,55 +34,64 @@ The details of the datasets used and their specific links will be provided here 
 
 ## ***Set Up***
 
-### Pytorch 2.0 (CUDA 11.8)
-Our experimental platform is configured with RTX 3090 GPU (CUDA 11.8), and the code runs in a PyTorch 2.0 environment.
+### Pytorch 2.0 (CUDA 11.7)
 
-For details on the environment, please refer to the future [`requirements.txt`](requirements.txt) file.
+Our experimental platform is configured with an RTX 3090 GPU, and the released code has been tested in a PyTorch 2.0 environment with CUDA 11.7.
 
-**Run the installation command:**
+**Run the installation commands:**
 ```bash
+conda env create --file environment.yml
+conda activate ultrags
 pip install -r requirements.txt
 ```
+
 
 ## ***Data Preprocessing***
 
 Data preprocessing is divided into two stages:
-1) We prepare ultrasound images and camera parameters for each sequence
-2) We generate the corresponding training and testing lists.
+1) Prepare ultrasound images and camera parameters for each sequence.
+2) Organize each processed sequence into the UltraGS input format.
 
-To better adapt ultrasound data for Gaussian Splatting and ensure optimal reconstruction performance, we will provide the packaged preprocessing code after the data release. You only need to run the future [`Prepare_data.py`](Prepare_data.py), or use the following command to preprocess the files.
-
+Each processed case should contain the following files:
 ```bash
-python Prepare_data.py
+case_name/
+├── images/
+├── transforms_train.json
+└── points3d.ply
 ```
+
+The `points3d.ply` file is optional. If it is not provided, UltraGS will initialize a random point cloud for training.
 
 
 ## ***Train***
 
-Once you have completed the data preparation, you can use the future [`train.py`](train.py) file to train your own model.
+Once you have completed the data preparation, you can use [`train.py`](train.py) to train your own model.
 
->**N.B.** The training code is being organized and will be released step by step.
 ```bash
-python train.py
+python train.py -s /path/to/processed/ultrasound/case -m /path/to/output
 ```
 
 
 ## ***Validation***
 
-After completing the training, you can run the future [`evaluate.py`](evaluate.py) file to evaluate the model.
+After completing the training, you can use [`render.py`](render.py) and [`metrics.py`](metrics.py) to evaluate the model.
 
 UltraGS is evaluated with PSNR, SSIM, MSE, and inference speed. In our experiments, UltraGS achieves up to 29.55 PSNR, 0.89 SSIM, and 64.69 fps on a single GPU.
 
 ```bash
-python evaluate.py
+python render.py -s /path/to/processed/ultrasound/case -m /path/to/output --skip_train
+python metrics.py -m /path/to/output
 ```
 
 
 ## ***Visualization***
 
-To better demonstrate the reconstruction results, we will provide visualization tools for novel ultrasound view synthesis, qualitative comparison, and ablation visualization.
+To better demonstrate the reconstruction results, we provide rendering tools for novel ultrasound view synthesis and trajectory visualization.
 
-The visualization code and demo results will be updated with the project code.
+```bash
+python render.py -s /path/to/processed/ultrasound/case -m /path/to/output
+python render.py -s /path/to/processed/ultrasound/case -m /path/to/output --render_path
+```
 
 
 ## ***References***
