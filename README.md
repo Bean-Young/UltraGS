@@ -13,23 +13,23 @@ To validate the effectiveness of our model, we conducted extensive experiments o
 
 The details of the datasets used and their specific links will be provided here for easy access to the data.
 
-### **Wild Dataset**
+### **Ultrasound in the Wild Dataset (Wild Dataset)**
 
-*Wild Dataset*: This dataset contains ten knee ultrasound samples acquired using a handheld Butterfly iQ+ probe at 30 FPS. The longitudinal suprapatellar sweeps include realistic motion artifacts and trajectory variations, making the dataset suitable for evaluating robustness under uncontrolled scanning conditions.
+*Ultrasound in the Wild Dataset (Wild Dataset)*: This dataset contains ten knee ultrasound samples acquired using a handheld Butterfly iQ+ probe at 30 FPS. The longitudinal suprapatellar sweeps include realistic motion artifacts and trajectory variations, making the dataset suitable for evaluating robustness under uncontrolled scanning conditions.
 
-[Wild Dataset](https://huggingface.co/datasets/rishitdagli/us-in-the-wild): We used this dataset to evaluate the performance of UltraGS under handheld and unconstrained scanning scenarios.
+[Ultrasound in the Wild Dataset](https://huggingface.co/datasets/rishitdagli/us-in-the-wild): We used this dataset to evaluate the performance of UltraGS under handheld and unconstrained scanning scenarios.
 
-### **Phantom Dataset**
+### **Lumbar Spine Phantom Dataset (Phantom Dataset)**
 
-*Phantom Dataset*: This dataset contains nine lumbar spine phantom scans acquired using a KUKA robotic manipulator. The tilted and perpendicular sweeps introduce spinous process occlusions, which are useful for testing geometric reconstruction under controlled but challenging conditions.
+*Lumbar Spine Phantom Dataset (Phantom Dataset)*: This dataset contains nine lumbar spine phantom scans acquired using a KUKA robotic manipulator. The tilted and perpendicular sweeps introduce spinous process occlusions, which are useful for testing geometric reconstruction under controlled but challenging conditions.
 
-[Phantom Dataset](https://drive.google.com/drive/folders/1aDc3wA2gugUKS6IABsH_TNWQ5Ijk7tmi?usp=drive_link): We used this dataset to validate reconstruction quality under controlled ultrasound acquisition.
+[Lumbar Spine Phantom Dataset](https://drive.google.com/drive/folders/1aDc3wA2gugUKS6IABsH_TNWQ5Ijk7tmi?usp=drive_link): We used this dataset to validate reconstruction quality under controlled ultrasound acquisition.
 
-### **Clinical Dataset**
+### **Clinical Ultrasound Examination Dataset (Clinical Dataset)**
 
-*Clinical Dataset*: This is our in-house clinical ultrasound dataset collected using the Canon i900 ultrasound system with institutional research ethics approval (Ethics Approval No.: SL2024-KY-29-01). It contains six challenging cases with unconstrained probe motion, anatomical occlusions, and realistic clinical scanning variability, including wrist joint and kidney scans.
+*Clinical Ultrasound Examination Dataset (Clinical Dataset)*: This is our in-house clinical ultrasound dataset collected using the Canon i900 ultrasound system with institutional research ethics approval (Ethics Approval No.: SL2024-KY-29-01). It contains six challenging cases with unconstrained probe motion, anatomical occlusions, and realistic clinical scanning variability, including wrist joint and kidney scans.
 
-[Clinical Dataset](https://drive.google.com/drive/folders/19B9QHH03PwxXNSBaaPoGvEbw_Vzxul96?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto): We used this dataset to validate the performance of UltraGS under real-world clinical ultrasound examination scenarios.
+[Clinical Ultrasound Examination Dataset](https://drive.google.com/drive/folders/19B9QHH03PwxXNSBaaPoGvEbw_Vzxul96?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto): We used this dataset to validate the performance of UltraGS under real-world clinical ultrasound examination scenarios.
 
 
 ## ***Set Up***
