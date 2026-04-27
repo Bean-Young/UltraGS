@@ -29,7 +29,7 @@ The details of the datasets used and their specific links are provided here for 
 
 *Clinical Ultrasound Examination Dataset (Clinical Dataset)*: This is our in-house clinical ultrasound dataset collected using the Canon i900 ultrasound system with institutional research ethics approval (Ethics Approval No.: SL2024-KY-29-01). It contains six challenging cases with unconstrained probe motion, anatomical occlusions, and realistic clinical scanning variability, including wrist joint and kidney scans.
 
-Clinical Dataset: We have open-sourced this dataset on [Google Drive](https://drive.google.com/drive/folders/19B9QHH03PwxXNSBaaPoGvEbw_Vzxul96?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto), and used it to validate the performance of UltraGS under real-world clinical ultrasound examination scenarios.
+[Clinical Dataset](https://drive.google.com/drive/folders/19B9QHH03PwxXNSBaaPoGvEbw_Vzxul96?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto): We have open-sourced this dataset on [Google Drive](https://drive.google.com/drive/folders/19B9QHH03PwxXNSBaaPoGvEbw_Vzxul96?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto), and used it to validate the performance of UltraGS under real-world clinical ultrasound examination scenarios.
 
 
 ## ***Set Up***
