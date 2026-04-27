@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ## ***Data Preprocessing***
 
 Data preprocessing is divided into two stages:
-1) Prepare ultrasound images and camera parameters for each sequence.
+1) Prepare ultrasound images and estimate the relative camera poses for each sequence. Although each ultrasound image is a 2D cross-section of the scanned anatomy, we follow the preprocessing strategy used in the Wild Dataset and treat the image sequence as an open scene for SfM reconstruction. The camera parameters can be estimated with COLMAP, for example using the [`colmap2nerf.py`](https://github.com/NVlabs/instant-ngp/blob/master/scripts/colmap2nerf.py) script from Instant-NGP to export the poses into a NeRF-style `transforms_train.json` file.
 2) Organize each processed sequence into the UltraGS input format.
 
 Each processed case should contain the following files:
