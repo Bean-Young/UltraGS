@@ -19,11 +19,11 @@ The details of the datasets used and their specific links are provided here for 
 
 [Ultrasound in the Wild Dataset](https://huggingface.co/datasets/rishitdagli/us-in-the-wild): We used this dataset to evaluate the performance of UltraGS under handheld and unconstrained scanning scenarios.
 
-### **Lumbar Spine Phantom Dataset (Phantom Dataset)**
+### **Phantom Dataset**
 
-*Lumbar Spine Phantom Dataset (Phantom Dataset)*: This dataset contains nine lumbar spine phantom scans acquired using a KUKA robotic manipulator. The tilted and perpendicular sweeps introduce spinous process occlusions, which are useful for testing geometric reconstruction under controlled but challenging conditions.
+*Phantom Dataset*: This dataset contains nine lumbar spine phantom scans acquired using a KUKA robotic manipulator. The tilted and perpendicular sweeps introduce spinous process occlusions, which are useful for testing geometric reconstruction under controlled but challenging conditions.
 
-[Lumbar Spine Phantom Dataset](https://drive.google.com/drive/folders/1aDc3wA2gugUKS6IABsH_TNWQ5Ijk7tmi?usp=drive_link): We used this dataset to validate reconstruction quality under controlled ultrasound acquisition.
+[Phantom Dataset](https://drive.google.com/drive/folders/1aDc3wA2gugUKS6IABsH_TNWQ5Ijk7tmi?usp=drive_link): We used this dataset to validate reconstruction quality under controlled ultrasound acquisition.
 
 ### **Clinical Ultrasound Examination Dataset (Clinical Dataset)**
 
