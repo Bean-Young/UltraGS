@@ -36,13 +36,26 @@ Due to privacy and compliance requirements for clinical medical data, this datas
 
 ## ***Set Up***
 
-Our experiments were conducted on an NVIDIA RTX 3090 GPU. The complete environment file will be updated with the code.
+### Pytorch 2.0 (CUDA 11.8)
+Our experimental platform is configured with RTX 3090 GPU (CUDA 11.8), and the code runs in a PyTorch 2.0 environment.
 
 For details on the environment, please refer to the future [`requirements.txt`](requirements.txt) file.
 
 **Run the installation command:**
 ```bash
 pip install -r requirements.txt
+```
+
+## ***Data Preprocessing***
+
+Data preprocessing is divided into two stages:
+1) We prepare ultrasound images and camera parameters for each sequence
+2) We generate the corresponding training and testing lists.
+
+To better adapt ultrasound data for Gaussian Splatting and ensure optimal reconstruction performance, we will provide the packaged preprocessing code after the data release. You only need to run the future [`Prepare_data.py`](Prepare_data.py), or use the following command to preprocess the files.
+
+```bash
+python Prepare_data.py
 ```
 
 
@@ -76,9 +89,8 @@ The visualization code and demo results will be updated with the project code.
 
 ## ***References***
 
-1) [**3D Gaussian Splatting**](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
-2) [**Ultra-NeRF**](https://proceedings.mlr.press/v227/wysocki24a.html)
-3) [**NeRF-US**](https://arxiv.org/abs/2408.10258)
+1) [**3DGS**](https://github.com/graphdeco-inria/gaussian-splatting)
+2) [**2DGS**](https://github.com/hbb1/2d-gaussian-splatting)
 
 
 ## ***Citation***
