@@ -4,7 +4,7 @@ This project was created by [***Yuezhe Yang***](https://bean-young.github.io) fo
 
 ### [**Project Page**](https://bean-young.github.io/ultrags/)
 
-### ***ICME 2026***
+### ***ICME, 2026***
 
 ## ***Abstract***
 
