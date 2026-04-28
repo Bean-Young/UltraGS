@@ -101,10 +101,10 @@ python render.py -s /path/to/processed/ultrasound/case -m /path/to/output --rend
 ## ***Citation***
 
 ```bibtex
-@inproceedings{yang2026ultrags,
-  title={UltraGS: Real-Time Physically-Decoupled Gaussian Splatting for Ultrasound Novel View Synthesis},
-  author={Yang, Yuezhe and Ruan, Qingqing and Cai, Wenjie and Dong, Yufang and Yang, Dexin and Dong, Xingbo and Jin, Zhe and Dai, Yong},
-  booktitle={2026 IEEE International Conference on Multimedia and Expo (ICME)},
-  year={2026}
+@article{yang2025ultrags,
+  title={UltraGS: Gaussian Splatting for Ultrasound Novel View Synthesis},
+  author={Yang, Yuezhe and Cai, Wenjie and Yang, Dexin and Dong, Yufang and Dong, Xingbo and Jin, Zhe},
+  journal={arXiv preprint arXiv:2511.07743},
+  year={2025}
 }
 ```
